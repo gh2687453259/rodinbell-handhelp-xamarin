@@ -1,11 +1,11 @@
 # rodinbell-handhelp-xamarin
 rodinbell orca50 handhelp  xamarin
 
-## 1. ini a Reader : 
+## 1. init a Reader : 
         mxreaderHelper.CreateReaderHub(nameid);
 
 
-## 2. connect Reader : mxreaderHelper.CreateReaderHub(nameid);
+## 2. connect Reader : 
         JObject jobj = new JObject
         {
             {"method", "connectDevice"},
@@ -17,7 +17,6 @@ rodinbell orca50 handhelp  xamarin
         {
             {"method", "getFirmwareVersion"},
         };
-
         var res = mxreaderHelper.CallReaderHubUhf(nameid, getfirmstr);
 
 ## 4. inventory : 
@@ -29,6 +28,8 @@ rodinbell orca50 handhelp  xamarin
 
 ## 5. close : 
         mxreaderHelper.DestroyReaderHub(nameid);
+
+
 
 
  ![image](test.png)       
